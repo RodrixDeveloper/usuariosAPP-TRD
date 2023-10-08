@@ -1,0 +1,19 @@
+<app-loading *ngIf="loading" ></app-loading>
+
+<div *ngIf="!loading" class="row">
+    <div class="col-lg-8 offset-lg-2">
+        <div class="card" style="width: 25rem; margin: 0 auto;">
+            <img [src]="imgUrl" alt="imagenGato" class="card-img-top">
+            <div class="card-body">
+                <h5 class="card-title text-center">
+                    {{name}}
+                </h5>
+                <p class="card-text text-center"> {{email}}</p>
+                <p class="card-text text-center"> {{gender}}</p>
+            </div>
+            <div class="d-grid gap-2 px-4 py-4">
+                <button class="btn btn-xl" routerLink="/dashboard">VOLVER</button>
+            </div>
+        </div>
+    </div>
+</div>

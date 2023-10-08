@@ -1,0 +1,12 @@
+<div class="card" style="width: 18rem;">
+    <img [src]="imgUrl" alt="imagenGato" class="card-img-top">
+    <div class="card-body">
+        <h5 class="card-title text-center">
+            {{name}}
+        </h5>
+        <p class="card-text text-center"> {{email}}</p>
+        <div class="d-grid gap-2">
+            <button class="btn btn-xl" routerLink="usuario/{{id}}">VER</button>
+        </div>
+    </div>
+</div>
